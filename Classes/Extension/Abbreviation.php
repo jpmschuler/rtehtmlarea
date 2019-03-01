@@ -147,6 +147,8 @@ class Abbreviation extends RteHtmlAreaApi
      */
     protected function buildJSAbbreviationArray()
     {
+
+        return json_encode(['abbr' =>[], 'acronym' => []]);
         $backendUser = $this->getBackendUserAuthentication();
         $button = 'abbreviation';
         $acronymArray = [];
